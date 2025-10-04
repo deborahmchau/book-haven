@@ -1,8 +1,8 @@
 # Book Haven - A Book Library App
-Welcome to *Book Haven*, a React-based web application that allows users to search, explore, and discover books from the [Open Library API] (https://openlibrary.org/developers/api). Users can search by title, author, or keywords, view detailed information about each book, and get personalized recommedations and goodread reviews - all in a clean, responsive interface built with Tailwind CSS.
+Welcome to **Book Haven**, a React-based web application that allows users to search, explore, and discover books from the [Open Library API](https://openlibrary.org/developers/api). Users can search by title, author, or keywords, view detailed information about each book, and get personalized recommedations and goodread reviews - all in a clean, responsive interface built with Tailwind CSS.
 
 ## Project Overview
-*Book Haven* is built as part of my *ALX Front-End SE Capstone Project*. It demonstrates the integration of third-party APIs, responsive design with Tailwid CSS, state management, and component-based UI development usig *React*.
+**Book Haven** is built as part of my **ALX Front-End SE Capstone Project**. It demonstrates the integration of third-party APIs, responsive design with Tailwid CSS, state management, and component-based UI development usig *React*.
 
 ## Features
 - Search for booksby title, author, or keywords using the Open Library API.
@@ -42,11 +42,11 @@ book-haven/
 └─ vite.config.js
 
 ## Deployment
-The app willbe deployed on *Vercel* for free hosting. (Coming soon)
+The app willbe deployed on **Vercel** for free hosting. (Coming soon)
 
 ## License
-This project is licensed under the *MIT License*. 
+This project is licensed under the **MIT License**. 
 
 ## Author
-*Deborah Henry Mchau*
+**Deborah Henry Mchau**
 Front-End Developer | ALX SE Cohort 6
