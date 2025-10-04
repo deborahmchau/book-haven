@@ -37,6 +37,7 @@ book-haven/
 ├─ LICENSE.md
 ├─ package.json
 ├─ package-lock.json
+├─ postcss.config.js
 ├─ README.md
 ├─ tailwind.config.js
 └─ vite.config.js
