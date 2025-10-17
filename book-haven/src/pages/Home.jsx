@@ -1,22 +1,15 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import SearchBar from "../components/SearchBar";
+import Navbar from "../components/Navbar"; 
+import SearchBar from "../components/SearchBar"; 
+import Footer from "../components/Footer"; 
 
-export default function Home() {
-  const [query, setQuery] = useState("");
-  const navigate = useNavigate();
-
-  const handleSearch = () => {
-    if (query.trim()) {
-      navigate(`/search?q=${query}`);
-    }
-  };
-
-  return (
-    <div className="text-center mt-10">
-      <h1 className="text-3xl font-bold">Welcome to Book Haven</h1>
-      <p className="mt-2 text-gray-600">Discover your next great read 📚</p>
-      <SearchBar query={query} setQuery={setQuery} onSearch={handleSearch} />
-    </div>
-  );
-}
+export default function Home() { 
+     return ( 
+         <div className="bg-cover bg-center min-h-screen flex flex-col justify-center items-center relative" style={{ backgroundImage: "url('/books-bg.jpg')" }}>
+            <div className="bg-white bg-opacity-90 p-8 rounded-lg shadow-lg text-center">
+              <SearchBar />
+            </div>
+        </div>    
+     ); 
+} 
