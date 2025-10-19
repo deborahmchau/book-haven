@@ -6,8 +6,8 @@ const SearchBar = () => {
     const [query, setQuery] = useState("");
     const navigate = useNavigate();
 
-    const handleSearch = (event) => {
-        event.preventDefault();
+    const handleSearch = (e) => {
+        e.preventDefault();
         if (query.trim()) {
             navigate('/search?q=${encodeURIComponent(query)}');
         }
@@ -22,7 +22,7 @@ const SearchBar = () => {
                  type="text" 
                  placeholder="Search..."
                  value={query}
-                 onChange={(event) => setQuery(event.target.value)} 
+                 onChange={(e) => setQuery(e.target.value)} 
                  className="border p-2 rounded w-full" /> 
               <button className="bg-gray-200 px-4 py-2 rounded-r-md hover:bg-gray-300"> 
                  <Search /> 

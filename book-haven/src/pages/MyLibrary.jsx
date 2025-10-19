@@ -15,7 +15,7 @@ export default function MyLibrary() {
                                  <p>AUTHOR: {book.author}</p> 
                                  <p>READING STATUS: {book.status}</p> 
                                  <div className="mt-3 flex justify-center gap-3"> 
-                                      <Link to={`/recommendations/${book.id}`} className="bg-gray-200 px-3 py-1 rounded-lg hover:bg-gray-300" > Books Similar To This </Link> 
+                                      <Link to={`/Recommendations/${book.id}`} className="bg-gray-200 px-3 py-1 rounded-lg hover:bg-gray-300" > Books Similar To This </Link> 
                                       <a href={`https://www.goodreads.com/search?q=${encodeURIComponent(book.title)}`} target="_blank" rel="noreferrer" className="bg-gray-200 px-3 py-1 rounded-lg hover:bg-gray-300" > Goodreads Review </a> 
                                  </div> 
                            </div> 
