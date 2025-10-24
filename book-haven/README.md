@@ -24,8 +24,9 @@ book-haven/
 ├─ node_modules
 ├─ public/                # Public assets
 ├─ src/
-│  ├─ components/         # (SearchBar, BookList, BookDetails, etc.)
-│  ├─ pages/              # (Home, BookDetail, Recommendations)
+│  ├─ assets              # (book-logo)
+│  ├─ components/         # (SearchBar, BookCard, Navbar, etc.)
+│  ├─ pages/              # (Home, Search, Recommendations, etc)
 │  ├─ services/           # API functions (e.g., openLibrary.js)
 │  ├─ App.jsx             # Main application component
 │  ├─ main.jsx            # App entry point
