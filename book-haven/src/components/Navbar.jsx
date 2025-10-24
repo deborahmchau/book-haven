@@ -16,8 +16,8 @@ export default function Navbar() {
            {/* Desktop Menu */} 
           <div className="hidden md:flex space-x-8 font-bold">
             <Link to="/" className="hover:text-purple-700">HOME</Link>
-            <Link to="/" className="hover:text-purple-700">SEARCH</Link>
-            <Link to="/" className="hover:text-purple-700">MY LIBRARY</Link> 
+            <Link to="/search" className="hover:text-purple-700">SEARCH</Link>
+            <Link to="/library" className="hover:text-purple-700">MY LIBRARY</Link> 
           </div>
 
            {/* Mobile Menu Button */} 

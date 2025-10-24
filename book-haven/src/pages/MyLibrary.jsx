@@ -1,9 +1,21 @@
-import { useState } from "react"; 
-import { Link } from "react-router-dom"; 
+import { useState, useEffect } from "react"; 
+import { Link } from "react-router-dom";
+import { getSavedBooks, removeBook } from "../services/storageService";
+import BookCard from "../components/BookCard"; 
 
 export default function MyLibrary() { 
     const [library] = useState([ { id: "OL82563W", title: "Lorem Lopus", author: "John Doe", status: "Read" }, { id: "OL12345W", title: "Book Ipsum", author: "Jane Smith", status: "Currently Reading" }, ]); 
-    
+    const [savedBooks, setSavedBooks] = useState([]);
+
+    useEffect(() => {
+        setSavedBooks(getSavedBooks());
+    }, []);
+
+    const handleRemove = (bookKey) => {
+        removeBook(bookKey);
+        setSavedBooks(getSavedBooks());
+    };
+
     return ( 
         <div className="bg-cover bg-center min-h-screen flex flex-col justify-center items-center relative" style={{ backgroundImage: "url('/books-bg.jpg')" }}>
              <div className="bg-white max-w-4xl mx-auto p-6 rounded-2xl shadow-lg"> 
